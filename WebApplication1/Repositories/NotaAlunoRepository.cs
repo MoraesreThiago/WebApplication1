@@ -12,7 +12,6 @@ namespace WebApplication1.Repositories
 
         public void InserirNota(NovaNotaAluno novaNotaAluno)
         {
-            // Verifica se o aluno e a disciplina existem
             if (!AlunoExiste(novaNotaAluno.RaAluno))
             {
                 throw new Exception("O aluno não existe.");
